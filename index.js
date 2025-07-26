@@ -33,4 +33,3 @@ while (numeroTentativas > 0) {
 if (numeroTentativas === 0) {
     console.log(`Tentativas acabaram, o número era ${numeroAleatorio}`)
 }
-
