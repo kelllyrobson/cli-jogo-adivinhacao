@@ -10,7 +10,11 @@ a cada tentativa o programa diz se o numero esta abaixo ou acima do escolhido
 
 */
 
-const numeroAleatorio = Math.floor(Math.random() * 101)
+if (numeroTentativas === 0) {
+    console.log(`Tentativas acabaram, o número era ${numeroAleatorio}`)
+}
+try {
+    const numeroAleatorio = Math.floor(Math.random() * 101)
 let numeroTentativas = 7
 
 while (numeroTentativas > 0) {
@@ -32,4 +36,8 @@ while (numeroTentativas > 0) {
 
 if (numeroTentativas === 0) {
     console.log(`Tentativas acabaram, o número era ${numeroAleatorio}`)
+}
+
+} catch (error) {
+    
 }
